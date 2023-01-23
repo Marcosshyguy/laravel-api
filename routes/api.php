@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Route;
 /*
 |--------------------------------------------------------------------------
 | API Routes
-|--------------------------------------------------------------------------
+|--------------------------------------------------------------------------s
 |
 | Here is where you can register API routes for your application. These
 | routes are loaded by the RouteServiceProvider within a group which
@@ -20,4 +20,5 @@ use Illuminate\Support\Facades\Route;
 //     return $request->user();
 // });
 
-Route::get('/call', [ProjectController::class, 'index']);
+Route::get('call', [ProjectController::class, 'index']);
+Route::get('call/{slug}', [ProjectController::class, 'show']);
